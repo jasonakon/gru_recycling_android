@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textSize="16dp"
+        android:paddingTop="13dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Thank You, Jason Lim"
+        android:textColor="#000"
+        android:id="@+id/text_frag_2"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_frag3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/progressBar5"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/imageView7"
+                android:src="@drawable/jb" />
+
+            <TextView
+                android:id="@+id/text_driver_frag3"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/text_vendor_frag3"
+
+                android:layout_marginTop="19dp"
+                android:layout_toEndOf="@+id/image_frag3"
+                android:text="• Francis Leong (JPL 7735)"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_coin_frag3"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+
+                android:layout_below="@+id/text_vendor_frag3"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/image_frag3"
+                android:text="• 30 Gru-Coins"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_vendor_frag3"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/image_frag3"
+
+                android:layout_marginTop="9dp"
+                android:layout_toEndOf="@+id/image_frag3"
+                android:text="• Good Hope Recycling Sdn Bhd"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignStart="@+id/progressBar5"
+                android:layout_below="@+id/image_frag3"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/ic_thumb_up_black_24dp" />
+
+            <Button
+                android:id="@+id/but_frag3"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/imageView7"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button"
+                android:text="Back to main menu"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/imageView7"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/imageView7"
+                android:text="Your Request has been Submitted"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="36dp"
+                android:text="(Your Recycable Goods Will be Picked Up Shortly)"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                android:id="@+id/textView14" />
+
+            <ProgressBar
+                android:id="@+id/progressBar5"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView14"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/text_test_frag3"
+                android:layout_width="220dp"
+                android:textSize="12dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/textView6"
+                android:layout_alignEnd="@+id/but_frag3" />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

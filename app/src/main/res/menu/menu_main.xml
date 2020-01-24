@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/Purchase"
+        android:orderInCategory="300"
+        android:title="Purchase"
+        android:icon="@drawable/likes"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <item
+        android:id="@+id/Dismiss"
+        android:orderInCategory="300"
+        android:title="Dissmiss"
+        android:icon="@drawable/likes"
+        app:showAsAction="ifRoom">
+    </item>
+
+</menu>

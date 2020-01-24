@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:id="@+id/frame_layout_1">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map_status"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frame_layout_1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:text="Delivery in Progress"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:id="@+id/text_header_ds" />
+
+            <ProgressBar
+                android:id="@+id/progress_ds"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_header_ds"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <TextView
+                android:id="@+id/text_driver_ds"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+
+
+                android:layout_alignStart="@+id/text_coin_delivery_status"
+                android:layout_below="@+id/text_coin_delivery_status"
+                android:text="• Francis Leong (JPL 7735)"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_coin_delivery_status"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+
+
+                android:layout_alignStart="@+id/text_vendor_delivery_status"
+                android:layout_below="@+id/text_vendor_delivery_status"
+                android:text="• 130 Gru-Coins"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image_delivery_status"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/progress_ds"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_toStartOf="@+id/text_driver_ds"
+                android:src="@drawable/jb"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/text_vendor_delivery_status"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+
+
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="28dp"
+                android:text="• Good Hope Recycling Sdn Bhd"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@id/progress_ds"
+                android:src="@drawable/question"
+                android:id="@+id/image_question_ds"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="(Start your first recycling by clicking on the Recycling Button)"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textSize="12dp"
+                android:id="@+id/text_description_ds"
+                android:layout_below="@+id/image_question_ds"/>
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

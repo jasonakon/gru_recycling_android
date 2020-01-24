@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Account_Verification"
+        android:orderInCategory="100"
+        android:title="Verify Account"
+        />
+    <item
+        android:id="@+id/Bug_Fix"
+        android:orderInCategory="100"
+        android:title="Bug Fix"
+         />
+    <item
+        android:id="@+id/Log_Out"
+        android:orderInCategory="100"
+        android:title="Log Out"
+        />
+</menu>

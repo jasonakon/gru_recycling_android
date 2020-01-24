@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.limjichen.recycling2.MainActivity"
+    tools:layout_editor_absoluteY="25dp"
+    android:background="#d2fad1">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:id="@+id/frameLayout"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/frameLayout"
+            android:background="@drawable/ui3">
+
+            <Button
+                android:id="@+id/but_top_setting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="17dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_settings_black_24dp"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="235dp" />
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/but_top_setting"
+                android:layout_marginEnd="12dp"
+                android:layout_toStartOf="@+id/but_top_setting"
+                android:background="@drawable/ic_notifications_none_black_24dp"
+                android:id="@+id/button3" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/progressBar2"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/ic_layers_black_24dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button3"
+                android:layout_alignTop="@+id/button3"
+                android:layout_marginStart="13dp"
+                android:layout_toEndOf="@+id/textView"
+                android:indeterminate="false"
+                android:indeterminateTint="#ff0"
+                android:indeterminateTintMode="src_atop" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button4"
+                android:layout_alignTop="@+id/button4"
+                android:layout_marginStart="11dp"
+                android:layout_toEndOf="@+id/button4"
+                android:fontFamily="sans-serif-light"
+                android:text="Lv. 3"
+                android:textColor="#FFFF"
+                android:textSize="20dp" />
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifImageView"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/button4"
+                android:layout_marginBottom="27dp"
+                android:src="@drawable/coin_spin" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/gifImageView"
+                android:layout_toEndOf="@+id/textView"
+                android:fontFamily="sans-serif-thin"
+                android:text="465"
+                android:textStyle="bold"
+                android:textColor="#FFFF"
+                android:textSize="60dp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="300dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/but_top_setting"
+                android:src="@drawable/lion"
+                android:id="@+id/imageView5" />
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:padding="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="181dp"
+        android:id="@+id/frameLayout2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edge_blue_rectange">
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/g1_but"
+                android:id="@+id/but_logo_1" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignTop="@+id/but_logo_3"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/but_logo_3"
+                android:background="@drawable/g4_but"
+                android:id="@+id/but_logo_2" />
+
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignTop="@+id/but_logo_4"
+                android:layout_marginStart="19dp"
+                android:layout_toEndOf="@+id/but_logo_4"
+                android:background="@drawable/g3_but"
+                android:id="@+id/but_logo_3" />
+
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignTop="@+id/but_logo_1"
+                android:layout_marginStart="17dp"
+                android:layout_toEndOf="@+id/but_logo_1"
+                android:background="@drawable/g2_but"
+                android:id="@+id/but_logo_4" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignStart="@+id/but_logo_1"
+                android:layout_below="@+id/but_logo_1"
+                android:text="Account"
+                android:textColor="#FFF"
+                android:textSize="12dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignStart="@+id/but_logo_2"
+                android:layout_below="@+id/but_logo_2"
+                android:text="History"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignStart="@+id/but_logo_3"
+                android:layout_below="@+id/but_logo_3"
+                android:text="Exchange"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignStart="@+id/but_logo_4"
+                android:layout_below="@+id/but_logo_4"
+                android:text="Delivery"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edge_rectangle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/title_challenges"
+                android:text="This Week Challenges"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:textColor="#14b6d4"/>
+
+            <ExpandableListView
+                android:id="@+id/list_view_challenges"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/title_challenges" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/but_camera"
+            android:text="Lets recycling"
+            android:textColor="#FFF"
+            android:background="@drawable/ripple_effect"
+            />
+
+    </FrameLayout>
+
+</RelativeLayout>
